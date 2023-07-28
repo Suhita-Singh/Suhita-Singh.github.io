@@ -171,18 +171,6 @@ ul.link-group li a i {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 8px transparent;
-  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7);
-  animation: glowing-border 2s infinite alternate;
-  box-sizing: border-box;
-}
-
-@keyframes glowing-border {
-  0% {
-    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7);
-  }
-  100% {
-    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
-  }
 }
 
 .project-section {
