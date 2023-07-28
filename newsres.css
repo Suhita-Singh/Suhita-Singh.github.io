@@ -163,6 +163,7 @@ ul.link-group li a i {
 
 .project-heading{
   font-size: 50px;
+  text-align: center;
   background: #252525;
   text-transform: capitalize;
   text-align: center;
@@ -173,33 +174,7 @@ ul.link-group li a i {
   -webkit-text-stroke: 8px transparent;
 }
 
-.project-section {
- 
-  padding: 50px;
-}
 
-.project-heading {
-  font-size: 50px;
-    text-transform: capitalize;
-    font-weight: 300;
-    margin-bottom: 50px;
-    color: white;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-stroke: 8px transparent;
-    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7);
-    animation: glowing-border 2s infinite alternate;
-    box-sizing: border-box;
-}
-
-@keyframes glowing-border {
-  0% {
-    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7);
-  }
-  100% {
-    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
-  }
-}
 
 .project-container {
   display: flex;
