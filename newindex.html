@@ -13,30 +13,32 @@
     <div class="main">
         <nav class="navbar">
             <ul class="link-group">
-              <li><a href="#top"><i class="fas fa-home"></i><span>Home</span></a></li>
-              <li><a href="#about"><i class="fas fa-info-circle"></i><span>About</span></a></li>
-              <li><a href="#education-section"><i class="fas fa-graduation-cap"></i><span>Education</span></a></li>
-              <li><a href="#skills-section"><i class="fas fa-tools"></i><span>Skills</span></a></li>
-              <li><a href="#experience-section"><i class="fas fa-briefcase"></i><span>Experience</span></a></li>
+              <li class="home"><a href="#top"><i class="fas fa-home"></i><span>Home</span></a></li>
+              <li class="about"><a href="#about"><i class="fas fa-info-circle"></i><span>About</span></a></li> 
+              <li class="projects"><a href="#projects"><i class="fas fa-project-diagram"></i><span>Projects</span></a></li>       
+              <li class="skills"><a href="#skills-section"><i class="fas fa-tools"></i><span>Skills</span></a></li>
+              <li class="education"><a href="#experience-section"><i class="fas fa-briefcase"></i><span>Edu./Exp.</span></a></li>
               <li><a href="#contacts-section"><i class="fas fa-phone"></i><span>Contacts</span></a></li>
             </ul>
           </nav>
           
           
-    <section class="home-section active">
+    <section id="top" class="home-section active">
         <h1 class="hero-heading">hello, i am Suhita</h1>
        
         
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="about-img-container">
             <ul class="about-ed">
                 <li>COLLEGE : Kamla Nehru Institute of technology, Sultanpur</li><br>
                 <li>COURSE : B.Tech</li><br>
                 <li>BRANCH : Electronics Engineering </li>
             </ul>
+            <a href="D:\ineubytes\CV-4.pdf" download>
           <button class="download-cv-btn">Download CV</button>
+        </a>
         </div>
         <div class="about-info">
             <p class="about-info"> I am a student at <strong>Kamla Nehru Institute of technology, Sultanpur</strong> pursuing my bachelor of technology degree in Electronics engineering. My interests are in Front End Engineering, and I love to create beautiful and performant products with delightful user experiences.
@@ -47,7 +49,7 @@
         
       </section>
 
-      <section class="project-section active">
+      <section id="projects" class="project-section active">
         <h1 class="project-heading"> MY PROJECTS</h1>
         <div class="project-container">
           <div class="project-card">
@@ -99,8 +101,9 @@
       </section> 
 
     <!-- skills -->
+    <section id="skills-section">
 <div class="skill-section">
-    <h1 class="heading">skills</h1>
+    <h1 class="heading1">skills</h1>
     <div class="skills-container">
         <div class="skill-card">
             <img src="img/html.png" class="skill-img" alt="">
@@ -145,10 +148,12 @@
       </div>
     </div>
 </div>
+</section>
 
 <!-- timeline -->
+<section id="experience-section">
 <div class="timeline">
-    <h1 class="heading">education and experience</h1>
+    <h1 class="heading">Education and Experience</h1>
     <div class="card">
       <div class="card-body">
           <h1 class="card-title">13th June, 2023-present</h1>
@@ -180,20 +185,22 @@
       </div>
   </div>
 </div>
-
-<!-- contact section -->
-<section class="contact-section">
-    <form class="contact-form">
-        <input type="text" name="name" id="name" autocomplete="off" placeholder="name" aria-label="text">
-        <input type="text" name="email" id="email" autocomplete="off" placeholder="email" aria-label="text">
-        <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
-        <button type="submit" class="form-submit-btn">contact</button>
-    </form>
-    <!-- map -->
-    <div class="map">
-      <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=praygraj&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:500px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:475px;width:500px;}</style></div></div>
-    </div>
 </section>
+
+
+<section id="contacts-section">
+  <form class="contact-form" action="send_email.php" method="POST">
+    <input type="text" name="name" id="name" autocomplete="off" placeholder="name" aria-label="text">
+    <input type="text" name="email" id="email" autocomplete="off" placeholder="email" aria-label="text">
+    <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
+    <button type="submit" class="form-submit-btn">Contact</button>
+  </form>
+  <!-- map -->
+  <div class="map">
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=praygraj&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:500px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:475px;width:500px;}</style></div></div>
+  </div>
+</section>
+
 </div>
 <script src="newjs.js"></script>
 </body>
