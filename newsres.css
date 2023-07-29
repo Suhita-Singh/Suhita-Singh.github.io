@@ -15,6 +15,39 @@ body {
   background: rgb(56, 54, 54);
   
 }
+@media (max-width: 767px) {
+  /* Update padding and other styles as needed */
+  ul.link-group {
+    padding-left: 10px;
+  }
+  .home-section {
+    padding: 0 20px; /* Update padding for smaller screens */
+  }
+  .project-section {
+    padding: 100px 20px 100px; /* Update padding for smaller screens */
+  }
+  .about-section {
+    padding: 150px 20px 0; /* Update padding for smaller screens */
+  }
+  .about {
+    grid-template-columns: 1fr; /* Change layout to single column */
+    grid-gap: 20px; /* Adjust gap for smaller screens */
+  }
+  .education {
+    margin-left: 0; /* Remove left margin for smaller screens */
+  }
+  /* Add more styles and adjustments as needed */
+}
+
+/* For screens between 768px and 1023px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Add specific styles for this range of screen sizes */
+}
+
+/* For screens larger than 1023px (e.g., desktops) */
+@media (min-width: 1024px) {
+  /* Add specific styles for this range of screen sizes */
+}
 
 
 .background-img {
@@ -23,8 +56,8 @@ body {
   left: 50%;
   background: grey;
   transform: translate(-50%, -50%);
-  height: 300px; /* Adjust the height as needed */
-  width: 300px; /* Adjust the width as needed */
+  height: 300px; 
+  width: 300px; 
   object-fit: cover;
   border-radius: 50%;
   border: none;
@@ -61,7 +94,7 @@ ul.link-group {
   align-items: center;
   list-style: none;
   margin: 0;
-  padding-left:500px ;
+  padding-left:450px ;
   padding-top:10px ;
 }
 
@@ -80,6 +113,23 @@ ul.link-group li a {
   align-items: center;
 }
 
+
+.about{
+  margin-left: 30px;
+}
+
+.projects{
+  margin-left: -20px;
+}
+
+.skills{
+  margin-left: 25px;
+  margin-right: 15px;
+}
+.education{
+  margin-left: 15px;
+}
+
 ul.link-group li a:hover {
   color: blue;
 }
@@ -87,7 +137,7 @@ ul.link-group li a:hover {
 ul.link-group li span {
   color: #fff;
   font-size: 14px;
-  margin-top: 5px; /* Adjust the spacing between the icon and the name */
+  margin-top: 5px; 
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out;
@@ -139,7 +189,6 @@ ul.link-group li a i {
 }
   
 .home-section{
-  /* previous styles */
   position: fixed;
 }
 .home-section.active,
@@ -150,8 +199,6 @@ ul.link-group li a i {
     opacity: 1;
     z-index: 8;
 }
-
-/* project-section */
 
 .project-section{
   width: 100%;
@@ -194,7 +241,7 @@ ul.link-group li a i {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  background:url("C:\Users\udaip\Downloads\balkouras-nicos-BMBUEXaFvGI-unsplash.jpg");
+  background:url("balkouras-nicos-BMBUEXaFvGI-unsplash.jpg");
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -204,8 +251,8 @@ ul.link-group li a i {
 
 .project-img {
   width: 100%;
-  height: 100%; /* Adjust the height as needed */
-  object-fit: cover; /* Adjust the object-fit property */
+  height: 100%; 
+  object-fit: cover; 
   transition: 0.5s;
   overflow: hidden;
   
@@ -321,13 +368,14 @@ ul.link-group li a i {
   margin: 100px 0;
 }
 
-.heading{
+
+.heading1{
   text-align: center;
   font-size: 60px;
   color: #fff;
   text-transform: capitalize;
   font-weight: 300;
-  margin-bottom: 100px;
+  margin-bottom: -20px;
 }
 
 .skills-container{
@@ -358,7 +406,7 @@ ul.link-group li a i {
 }
 
 .skill-info {
-  display: none; /* Hide the skill-info paragraphs by default */
+  display: none; 
   text-align: center;
   opacity: 0.5;
   font-size: 18px;
@@ -369,12 +417,12 @@ ul.link-group li a i {
 
 .skill-name:hover + .skill-info,
 .skill-info:hover {
-  display: block; /* Show the skill-info paragraph when hovering over skill-name or skill-info */
+  display: block; 
 }
 
 .skill-card {
   position: relative;
-  cursor: pointer; /* Add cursor style to indicate interactivity */
+  cursor: pointer; 
 }
 .skill-card:hover .skill-info {
   opacity: 1;
@@ -442,16 +490,19 @@ ul.link-group li a i {
   color: #4fdfff;
 }
 
-/* timeline */
-
 .timeline{
   display: block;
   width: 80%;
   margin: 150px auto;
 }
 
-.timeline .heading{
-  margin-bottom: 150px;
+.heading{
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 300;
+   margin-bottom: 50px;
 }
 
 .card{
@@ -569,7 +620,7 @@ ul.link-group li a i {
     cursor: pointer;
   }
 
-  /* Creating a pseudo-element for the glowing effect */
+ 
   .card::after {
     content: "";
     position: absolute;
@@ -609,7 +660,8 @@ ul.link-group li a i {
   }
 
 
-.contact-section{
+/* Custom style for the "contacts-section" section */
+#contacts-section {
   position: relative;
   top: 0;
   transition: 1s;
@@ -620,29 +672,35 @@ ul.link-group li a i {
   grid-gap: 50px;
 }
 
-.contact-form input, .contact-form textarea{
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   height: 40px;
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid #fff;
   margin-bottom: 30px;
   border-radius: 5px;
-  text-transform: capitalize;
+ 
   color: #fff;
   padding: 5px 10px;
 }
 
-::placeholder{
+::placeholder {
   color: #fff;
 }
 
-#msg{
+#msg {
   height: 280px;
   resize: none;
   font-family: sans-serif;
 }
 
-.form-submit-btn{
+.form-submit-btn {
   background: #ff4f4f;
   color: #fff;
   text-transform: capitalize;
@@ -654,7 +712,7 @@ ul.link-group li a i {
   cursor: pointer;
 }
 
-.map{
+.map {
   width: 100%;
   height: 100%;
   padding: 10px;
@@ -663,7 +721,7 @@ ul.link-group li a i {
   border-radius: 10px;
 }
 
-.map iframe{
+.map iframe {
   width: 100%;
   height: 100%;
   border-radius: 5px;
