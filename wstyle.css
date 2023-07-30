@@ -6,9 +6,10 @@
 }
 
 body{
-    background: url("weather-bg.jpg");
+     background: url("weather-bg.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 .card{
     width:90%;
