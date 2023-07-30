@@ -6,7 +6,7 @@
 }
 
 body{
-    background: url("weather-bg.jpg") no-repeat;
+    background: url("weather-bg.jpg");
     background-size: cover;
     background-position: center;
 }
