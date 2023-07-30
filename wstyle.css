@@ -6,31 +6,10 @@
 }
 
 body{
-    background: url("weather-bg.jpg");
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  background: grey;
-  transform: translate(-50%, -50%);
-  height: 300px; 
-  width: 300px; 
-  object-fit: cover;
-  border-radius: 50%;
-  border: none;
-  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7);
-  animation: glowing-border 2s infinite alternate;
-  box-sizing: border-box;
+    background: url("weather-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-
-@keyframes glowing-border {
-    0% {
-      box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.7);
-    }
-    100% {
-      box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
-    }
-  }
-  
 .card{
     width:90%;
     max-width: 470px;
@@ -46,29 +25,25 @@ body{
     -o-border-radius: 20px;
 }
 
-.search{
-    width: 100%;
+.search {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-}
-
-/* Common styles for both desktop and mobile */
-.search input {
+    margin-top: 20px;
+  }
+  
+  .search input {
     border: 0;
     outline: 0;
     background: #ebfffc;
     color: #555;
-    padding: 10px 25px;
-    height: 60px;
+    height: 40px;
+    width: 70%;
+    align-items: center;
+   margin-left: 50px;
+    padding: 0 16px;
     border-radius: 30px;
-    flex: 1;
-    margin-right: 16px;
     font-size: 18px;
+    margin-top: 20px;
   }
   
   .search button {
@@ -76,36 +51,35 @@ body{
     outline: 0;
     background: #ebfffc;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    margin-top: 20px;
+    
+    width: 40px;
+    height: 40px;
     cursor: pointer;
+    margin-left: 16px;
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 1.0);
   }
   
   .search button img {
-    width: 61px; /* Adjust the width as per your preference */
-    height: 61px; /* Adjust the height as per your preference */
+    width: 40px;
+    height: 40px;
   }
   
   /* Media query for mobile phones */
   @media (max-width: 768px) {
-    .search input {
-      padding: 8px 15px;
-      height: 40px;
-      font-size: 16px;
+    .search {
+      flex-direction: column; /* Set flex direction to column on mobile */
+      align-items: center; 
+      margin-left: -60px;/* Align items to the start of the column */
     }
   
     .search button {
-      width: 40px;
-      height: 40px;
-    }
-  
-    .search button img {
-      width: 41px; /* Adjust the width as per your preference */
-      height: 41px; /* Adjust the height as per your preference */
+      margin-top: 10px; /* Add some space between input and button on mobile */
+      margin-left: 60px; /* Reset margin-left to stack the button below the input */
     }
   }
   
+
 
 #result {
     display: flex;
