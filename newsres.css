@@ -7,17 +7,15 @@
 body {
   width: 100%;
   max-width: 1400px;
-  display: block;
+  display: absolute;
   margin: 0;
   background-size: cover;
   min-height: 100vh;
   background: #191919;
   font-family: sans-serif;
-  background: rgb(56, 54, 54);
+  background: rgb(32, 32, 32);
   
-}
-.body img{
-  display:flex;
+  
 }
 
 
@@ -70,41 +68,41 @@ ul.link-group {
 }
 
 ul.link-group li {
-  margin-right: 15px; /* Adjust the spacing between icons */
+  margin-right: 15px; 
   position: relative;
 }
 
 ul.link-group li a {
   text-decoration: none;
   color: #fff;
-  font-size: 20px; /* Adjust the icon size */
+  font-size: 20px; 
   transition: 0.4s ease-in-out;
   display: flex;
   flex-direction: column;
   
 }
 .home{
-  margin-left: -350px;
+  margin-left: -400px;
 }
 
 .about{
-  margin-left: 150px;
+  margin-left: 50px;
 }
 
 .projects{
-  margin-left: 100px;
+  margin-left: 5px;
 }
 
 .skills{
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .education{
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .contacts{
-  margin-left: 150px;
+  margin-left: 50px;
 }
 
 ul.link-group li a:hover {
@@ -303,12 +301,7 @@ ul.link-group li a i {
   line-height: 40px;
 }
 
-.about-img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-}
+
 
 .about-ed{
   font-family: 'Times New Roman', Times, serif;
@@ -320,13 +313,15 @@ ul.link-group li a i {
 }
 
 .download-cv-btn{
-  position: absolute;
+ display: block;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 20px;
   color: #fff;
   border: none;
+  margin-top: 20px;
+  margin-left: 150px;
   font-size: 16px;
   text-transform: capitalize;
   cursor: pointer;
@@ -637,7 +632,6 @@ ul.link-group li a i {
   }
 
 
-/* Custom style for the "contacts-section" section */
 #contacts-section {
   position: relative;
   top: 0;
@@ -682,24 +676,21 @@ ul.link-group li a i {
   color: #fff;
   text-transform: capitalize;
   padding: 15px 40px;
+  margin-top: 20px;
   display: block;
-  margin: auto;
+  
   border: none;
   border-radius: 10px;
   cursor: pointer;
 }
 
-.map {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  border: 2px solid #fff;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-}
+
 
 .map iframe {
   width: 100%;
-  height: 100%;
+  height: 100%; 
   border-radius: 5px;
+  border: 10px solid rgb(255,255,255,0.3);
 }
+
+
