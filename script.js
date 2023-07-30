@@ -57,9 +57,6 @@ element.getElementsByClassName("name")[0].innerText=songs[i].songName;
 
   })
 
- // ... Your previous code ...
-
-// Function to reset all play buttons to "play" state
 const resetPlayButtons = () => {
     Array.from(document.getElementsByClassName('songPlay')).forEach((element) => {
       element.classList.remove('fa-circle-pause');
@@ -68,28 +65,24 @@ const resetPlayButtons = () => {
   };
 
   audioElement.addEventListener('ended', () => {
-    resetPlayButtons(); // Reset all play buttons to "play" state
+    resetPlayButtons(); 
     masterPlay.classList.remove('fa-circle-pause');
     masterPlay.classList.add('fa-circle-play');
   });
 
   const updateSongName = () => {
-    // Get the element where you want to display the song name
     const currentSongNameElement = document.getElementById('currentSongName');
-  
-    // Update the content of the element with the name of the currently playing song
     currentSongNameElement.textContent = songs[songIndex].songName;
   };
   
   Array.from(document.getElementsByClassName('songPlay')).forEach((element) => {
     element.addEventListener('click', (e) => {
-      resetPlayButtons(); // Reset all play buttons to "play" state
+      resetPlayButtons(); 
       index = parseInt(e.target.id);
       e.target.classList.remove('fa-circle-play');
       e.target.classList.add('fa-circle-pause');
   
       if (audioElement.paused || index !== songIndex) {
-        // If a new song is clicked or the song is paused, start playing the new song
         songIndex = index;
         audioElement.src = songs[songIndex].filePath;
         audioElement.currentTime = 0;
@@ -102,7 +95,6 @@ const resetPlayButtons = () => {
       } 
      
       else {
-        // If the same song is clicked while it's already playing, pause it
         audioElement.pause();
         e.target.classList.remove('fa-circle-pause');
         e.target.classList.add('fa-circle-play');
@@ -112,10 +104,6 @@ const resetPlayButtons = () => {
     });
   });
   
-  // ... Your previous code ...
-  
-  
-  // Click event listener for next button
   document.getElementById('next').addEventListener('click', () => {
     if (index >= 7) {
       index = 0;
@@ -128,8 +116,6 @@ const resetPlayButtons = () => {
     masterPlay.classList.remove('fa-circle-play');
     masterPlay.classList.add('fa-circle-pause');
   });
-  
-  // Click event listener for previous button
   document.getElementById('previous').addEventListener('click', () => {
     if (index <= 0) {
       index = 7;
