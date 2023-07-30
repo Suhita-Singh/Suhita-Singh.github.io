@@ -8,7 +8,8 @@ body {
   width: 100%;
   max-width: 1400px;
   display: block;
-  margin: auto;
+  margin: 0;
+  background-size: cover;
   min-height: 100vh;
   background: #191919;
   font-family: sans-serif;
@@ -88,7 +89,7 @@ ul.link-group li a {
 }
 
 .projects{
-  margin-left: 150px;
+  margin-left: 100px;
 }
 
 .skills{
