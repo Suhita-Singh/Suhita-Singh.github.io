@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200&family=Poppins&family=Roboto:wght@300&display=swap');
+body {
+    background-color: lightcoral;
+    animation: backgroundAnimation 10s linear infinite;
+    background-image: url("3 Things You Can Do When You’re Spending Time Alone.jpg");
+  }
+  
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+ font-family: 'Poppins', sans-serif;
+ color: white;
+ 
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 89px;
+    background-color: black;
+    color:white;
+    
+
+}
+
+nav ul li {
+    padding: 0 8px;
+}
+
+.logo img{
+    width:44px;
+    padding-right: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 0 8px;
+}
+
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 25px auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 25px;
+}
+
+/* Reset default list styles */
+.songcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between items */
+    justify-content: center;
+}
+
+.item {
+    width: 150px; /* Adjust the item width as needed */
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: 150px; /* Adjust the image height to maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px; /* Add rounded corners to the image */
+}
+
+/* Add styles for other elements as needed */
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 15px;
+   align-items: center;
+   color: white;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    text-align: center;
+}
+
+#currentSongName{
+    margin-top: 10px;
+}
+
+
+
+
